@@ -1,0 +1,11 @@
+"Reference"; "Quantity"; "Value"; "Footprint"; "Datasheet"; "Characteristics"; "Package ID"; "Supplier"; "Manufacturer Name"; "Manufacturer Part Number"; "Supplier Order number"; "Notes"; "Description"
+"C1";"1";"100nF";"Capacitors_SMD:C_0805";"";"25 V, X7R";"0805";"digi key";"AVX Corporation";"08053C104KAT2A";"478-3755-1-ND";;
+"C2";"1";"22uF";"Capacitors_SMD:C_0805";"http://datasheets.avx.com/F98.pdf";"Tantalum, ESR 4Ohm, 10V, 20%";"0805";"Digikey";"AVX Corporation";"F981A226MSA";"478-8649-1-ND";;
+"IC1";"1";"AT24C256C-SSHL-T";"Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm";"http://www.atmel.com/images/atmel-8568-seeprom-at24c256c-datasheet.pdf";"256K (32K x 8) eeprom, i2c";"8-SOIC";"Aliexpress";;;"https://www.aliexpress.com/item/Free-shipping-10pcs-lot-AT24C256C-SSHL-T-EEPROM-serial-AT24C256C-screen-2ECL-original-authentic/32699367011.html?spm=2114.13010608.0.0.Tp3XTh";;
+"J1";"1";"RJ45";"Connect:RJ45_8";"";;;;"Optical Utility Meter LED Pulse Sensor";;;"https://openenergymonitor.org/emon/opticalpulsesensor";
+"P1";"1";"Supply";"Connect:AK300-2";""
+"P2";"1";"HLK-PM01";"SensorsUnleashed:HLK-PM01";"https://www.aliexpress.com/item/5pcs-TSP-05-replace-HLK-PM01-AC-DC-220V-to-5V-mini-power-supply-module-intelligent/32409558042.html?spm=2114.13010608.0.0.WTNxW9";"100-240VAC in, 5VDC/3W out";;"Aliexpress";;;;"Meets CE and UL; written, but not proven!";
+"P3";"1";"Sensors Unleashed Radio";"SensorsUnleashed:zb3219PA_radio";""
+"Q3";"1";"BC849";"TO_SOT_Packages_SMD:SOT-23";"http://www.mccsemi.com/up_pdf/BC846A-BC849C(SOT-23).pdf";;"SOT23";"Digikey";"Micro Commercial Co";"BC849C-TP";"BC849C-TPMSCT-ND";;"TRANS NPN 30V 0.1A"
+"R5, R8";"2";"10k";"Resistors_SMD:R_0805";""
+"U1";"1";"AMS1117";"TO_SOT_Packages_SMD:SOT-223";"";"Fixed 3.3V, 1A";"SOT-223";;"Advanced Monolithic Systems";"AMS1117-3.3";;;

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/media/omn/Storage/Hardware/pulsesensor/pulseboard.sch</source>
+    <date>søn 19 feb 2017 10:38:13 CET</date>
+    <tool>Eeschema no-vcs-found-7664~57~ubuntu16.10.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Pulse counter board</title>
+        <company>Sensors Unleashed - sensorsunleashed.com</company>
+        <rev>1.0</rev>
+        <date>2017-02-19</date>
+        <source>pulseboard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value="Compatible with the OpenEnergyMonior - Optical Pulse Sensor"/>
+        <comment number="3" value="Count pulses via an RJ45 input. "/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C2">
+      <value>22uF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <datasheet>http://datasheets.avx.com/F98.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">Tantalum, ESR 4Ohm, 10V, 20%</field>
+        <field name="Package ID">0805</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer Name">AVX Corporation</field>
+        <field name="Manufacturer Part Number">F981A226MSA</field>
+        <field name="Supplier Order number">478-8649-1-ND</field>
+      </fields>
+      <libsource lib="device" part="CP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583B593D</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>Sensors Unleashed Radio</value>
+      <footprint>SensorsUnleashed:zb3219PA_radio</footprint>
+      <libsource lib="conn" part="DIL20"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583BF138</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AMS1117</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223</footprint>
+      <fields>
+        <field name="Characteristics">Fixed 3.3V, 1A</field>
+        <field name="Package ID">SOT-223</field>
+        <field name="Manufacturer Name">Advanced Monolithic Systems</field>
+        <field name="Manufacturer Part Number">AMS1117-3.3</field>
+      </fields>
+      <libsource lib="AMS1117" part="AMS1117"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583D378A</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>RJ45</value>
+      <footprint>Connect:RJ45_8</footprint>
+      <fields>
+        <field name="Notes">https://openenergymonitor.org/emon/opticalpulsesensor</field>
+        <field name="Manufacturer Name">Optical Utility Meter LED Pulse Sensor</field>
+      </fields>
+      <libsource lib="conn" part="RJ45"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583C62AC</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583CC7BE</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0805</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583CD3E0</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Characteristics">25 V, X7R</field>
+        <field name="Package ID">0805</field>
+        <field name="Supplier">digi key</field>
+        <field name="Manufacturer Name">AVX Corporation</field>
+        <field name="Manufacturer Part Number">08053C104KAT2A</field>
+        <field name="Supplier Order number">478-3755-1-ND</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583F5618</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>Supply</value>
+      <footprint>Connect:AK300-2</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>583F7363</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>AT24C256C-SSHL-T</value>
+      <footprint>Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm</footprint>
+      <datasheet>http://www.atmel.com/images/atmel-8568-seeprom-at24c256c-datasheet.pdf</datasheet>
+      <fields>
+        <field name="Characteristics">256K (32K x 8) eeprom, i2c</field>
+        <field name="Package ID">8-SOIC</field>
+        <field name="Supplier">Aliexpress</field>
+        <field name="Supplier Order number">https://www.aliexpress.com/item/Free-shipping-10pcs-lot-AT24C256C-SSHL-T-EEPROM-serial-AT24C256C-screen-2ECL-original-authentic/32699367011.html?spm=2114.13010608.0.0.Tp3XTh</field>
+      </fields>
+      <libsource lib="at24c256c-sshl-t" part="AT24C256C-SSHL-T"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58431AC1</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BC849</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <datasheet>http://www.mccsemi.com/up_pdf/BC846A-BC849C(SOT-23).pdf</datasheet>
+      <fields>
+        <field name="Description">TRANS NPN 30V 0.1A</field>
+        <field name="Package ID">SOT23</field>
+        <field name="Supplier">Digikey</field>
+        <field name="Manufacturer Name">Micro Commercial Co</field>
+        <field name="Manufacturer Part Number">BC849C-TP</field>
+        <field name="Supplier Order number">BC849C-TPMSCT-ND</field>
+      </fields>
+      <libsource lib="transistors" part="BC849"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>586015B7</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>HLK-PM01</value>
+      <footprint>SensorsUnleashed:HLK-PM01</footprint>
+      <datasheet>https://www.aliexpress.com/item/5pcs-TSP-05-replace-HLK-PM01-AC-DC-220V-to-5V-mini-power-supply-module-intelligent/32409558042.html?spm=2114.13010608.0.0.WTNxW9</datasheet>
+      <fields>
+        <field name="Characteristics">100-240VAC in, 5VDC/3W out</field>
+        <field name="Supplier">Aliexpress</field>
+        <field name="Notes">Meets CE and UL; written, but not proven!</field>
+      </fields>
+      <libsource lib="powersupply" part="HLK-PM01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58A72CAF</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="AMS1117" part="AMS1117">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AMS1117</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="Vout" type="power_out"/>
+        <pin num="3" name="Vin" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="at24c256c-sshl-t" part="AT24C256C-SSHL-T">
+      <description>256Kb (32kx8) Serial EEPROM with Unique Serial Number, 8SOIC</description>
+      <docs>http://www.atmel.com/images/atmel-8568-seeprom-at24c256c-datasheet.pdf</docs>
+      <footprints>
+        <fp>SOIC-8*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AT24C256C-SSHL-T</field>
+        <field name="Datasheet">http://www.atmel.com/images/atmel-8568-seeprom-at24c256c-datasheet.pdf</field>
+        <field name="Package ID">8-SOIC</field>
+        <field name="Characteristics">256K (32K x 8) eeprom, i2c</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A0" type="input"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SDA" type="BiDi"/>
+        <pin num="6" name="SCL" type="input"/>
+        <pin num="7" name="WP" type="input"/>
+        <pin num="8" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="transistors" part="BC850">
+      <aliases>
+        <alias>BC849</alias>
+      </aliases>
+      <description>45V Vce, 0.1A Ic, Low noise, NPN, SOT-23</description>
+      <docs>http://www.fairchildsemi.com/ds/BC/BC850.pdf</docs>
+      <footprints>
+        <fp>SOT-23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BC850</field>
+        <field name="Footprint">SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector, single row, 01x02, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="DIL20">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">DIL20</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="powersupply" part="HLK-PM01">
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">HLK-PM01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AC2" type="power_in"/>
+        <pin num="2" name="AC1" type="power_in"/>
+        <pin num="3" name="DC-" type="power_out"/>
+        <pin num="4" name="DC+" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="RJ45">
+      <description>RJ45 connector with shield</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RJ45</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+        <pin num="9" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="transistors">
+      <uri>/usr/share/kicad/library/transistors.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="AMS1117">
+      <uri>/media/omn/Storage/Hardware/KicadComponents/lib/AMS1117.lib</uri>
+    </library>
+    <library logical="powersupply">
+      <uri>/media/omn/Storage/Hardware/KicadComponents/lib/powersupply.lib</uri>
+    </library>
+    <library logical="at24c256c-sshl-t">
+      <uri>/media/omn/Storage/Hardware/KicadComponents/lib/at24c256c-sshl-t.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+5C">
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="J1" pin="2"/>
+      <node ref="P2" pin="4"/>
+    </net>
+    <net code="2" name="Net-(P3-Pad7)">
+      <node ref="P3" pin="7"/>
+    </net>
+    <net code="3" name="Pulse">
+      <node ref="P3" pin="19"/>
+      <node ref="R5" pin="2"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="4" name="Net-(J1-Pad9)">
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="5" name="I2C_SCL">
+      <node ref="IC1" pin="6"/>
+      <node ref="P3" pin="11"/>
+    </net>
+    <net code="6" name="I2C_SDA">
+      <node ref="IC1" pin="5"/>
+      <node ref="P3" pin="12"/>
+    </net>
+    <net code="7" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="P3" pin="10"/>
+      <node ref="J1" pin="5"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="IC1" pin="2"/>
+      <node ref="IC1" pin="3"/>
+      <node ref="IC1" pin="4"/>
+      <node ref="IC1" pin="7"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="P2" pin="3"/>
+    </net>
+    <net code="8" name="VCC">
+      <node ref="R5" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="P3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="9" name="Net-(P3-Pad6)">
+      <node ref="P3" pin="6"/>
+    </net>
+    <net code="10" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="11" name="/Phase">
+      <node ref="P1" pin="1"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="12" name="/Nul">
+      <node ref="P1" pin="2"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="13" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="14" name="Net-(P3-Pad14)">
+      <node ref="P3" pin="14"/>
+    </net>
+    <net code="15" name="Net-(P3-Pad15)">
+      <node ref="P3" pin="15"/>
+    </net>
+    <net code="16" name="Net-(P3-Pad16)">
+      <node ref="P3" pin="16"/>
+    </net>
+    <net code="17" name="Net-(P3-Pad17)">
+      <node ref="P3" pin="17"/>
+    </net>
+    <net code="18" name="Net-(P3-Pad18)">
+      <node ref="P3" pin="18"/>
+    </net>
+    <net code="19" name="Net-(P3-Pad13)">
+      <node ref="P3" pin="13"/>
+    </net>
+    <net code="20" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="21" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="22" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="23" name="Net-(P3-Pad5)">
+      <node ref="P3" pin="5"/>
+    </net>
+    <net code="24" name="Net-(P3-Pad2)">
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="25" name="Net-(P3-Pad3)">
+      <node ref="P3" pin="3"/>
+    </net>
+    <net code="26" name="Net-(P3-Pad4)">
+      <node ref="P3" pin="4"/>
+    </net>
+    <net code="27" name="Net-(P3-Pad8)">
+      <node ref="P3" pin="8"/>
+    </net>
+    <net code="28" name="Net-(P3-Pad9)">
+      <node ref="P3" pin="9"/>
+    </net>
+    <net code="29" name="Net-(P3-Pad20)">
+      <node ref="P3" pin="20"/>
+    </net>
+    <net code="30" name="Net-(J1-Pad7)">
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="31" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+  </nets>
+</export>
